@@ -1,0 +1,898 @@
+/* Calibre font family */
+@font-face {
+    font-family: "Calibre Light";
+    src: url("fonts/Calibre/Calibre-Light.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-Light.woff") format("woff"),
+         url("fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre Light Italic";
+    src: url("fonts/Calibre/Calibre-LightItalic.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-LightItalic.woff") format("woff"),
+         url("fonts/Calibre/Calibre-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Calibre Medium";
+    src: url("fonts/Calibre/Calibre-Medium.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-Medium.woff") format("woff"),
+         url("fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre Medium Italic";
+    src: url("fonts/Calibre/Calibre-MediumItalic.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-MediumItalic.woff") format("woff"),
+         url("fonts/Calibre/Calibre-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Calibre Regular";
+    src: url("fonts/Calibre/Calibre-Regular.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-Regular.woff") format("woff"),
+         url("fonts/Calibre/Calibre-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre Regular Italic";
+    src: url("fonts/Calibre/Calibre-RegularItalic.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-RegularItalic.woff") format("woff"),
+         url("fonts/Calibre/Calibre-RegularItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Calibre Semibold";
+    src: url("fonts/Calibre/Calibre-Semibold.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-Semibold.woff") format("woff"),
+         url("fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre Semibold Italic";
+    src: url("fonts/Calibre/Calibre-SemiboldItalic.woff2") format("woff2"),
+         url("fonts/Calibre/Calibre-SemiboldItalic.woff") format("woff"),
+         url("fonts/Calibre/Calibre-SemiboldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* SFMono font family */
+@font-face {
+    font-family: "SFMono Medium";
+    src: url("fonts/SFMono/SFMono-Medium.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-Medium.woff") format("woff"),
+         url("fonts/SFMono/SFMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFMono Medium Italic";
+    src: url("fonts/SFMono/SFMono-MediumItalic.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-MediumItalic.woff") format("woff"),
+         url("fonts/SFMono/SFMono-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SFMono Regular";
+    src: url("fonts/SFMono/SFMono-Regular.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-Regular.woff") format("woff"),
+         url("fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFMono Regular Italic";
+    src: url("fonts/SFMono/SFMono-RegularItalic.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-RegularItalic.woff") format("woff"),
+         url("fonts/SFMono/SFMono-RegularItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SFMono Semibold";
+    src: url("fonts/SFMono/SFMono-Semibold.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-Semibold.woff") format("woff"),
+         url("fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFMono Semibold Italic";
+    src: url("fonts/SFMono/SFMono-SemiboldItalic.woff2") format("woff2"),
+         url("fonts/SFMono/SFMono-SemiboldItalic.woff") format("woff"),
+         url("fonts/SFMono/SFMono-SemiboldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    background: #0F172A; /* Equivalent to hsl(223,55%,14%) and rgb(16,27,55) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling on the body */
+    font-family: 'Your Preferred Font', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Viewport height */
+}
+
+.fixed-side {
+    position: fixed; /* Keeps this side fixed on scroll */
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh; /* Viewport height */
+}
+
+.scrollable-side {
+    flex: 1; /* Takes up 50% of the container's width */
+    margin-left: 50%; /* Positions this side next to the fixed side */
+    height: 100vh; /* Viewport height */
+    overflow-y: auto; /* Enables vertical scrolling on this side */
+}
+
+::selection {
+    background-color: #64ffda;
+    color: #124e4d;
+}
+
+/* This will be  all the non-scrollableside */
+
+
+.name {
+    font-size: 3.5em; /* Adjust as needed */
+    color: #FFF; /* Adjust color as needed, #FFF is white */
+    margin-left: 180px;
+    margin-top: 100px;
+    font-family: "Calibre semibold", sans-serif;
+    color: #d5deee; /* Adjust as needed */
+    line-height: 1; /* Adjust as needed to minimize the height of the highlight */
+    padding: 0; /* Ensure there is no extra padding that gets highlighted */
+}
+.job-title {
+    position: absolute;
+    top: 160px;
+    left: 180px;
+    font-size: 25px;
+    color: #d5deee;
+    font-family: "Calibre regular", sans-serif;
+}
+
+.dns {
+    color: #d5deee;
+    text-decoration: none;
+}
+
+.dns:hover {
+    color: #64ffda;
+}
+
+.job-description {
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    font-size: 20px;
+    color: #8892b0;
+    font-family: "Calibre Light", sans-serif;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.navigation-menu {
+    position: absolute; /* Changed from absolute to relative */
+    top: 330px; /* Adjust as needed to provide spacing below the 'job-description' */
+    left: 180px; /* Adjust as needed */
+    font-family: "Calibre semibold", sans-serif;
+    line-height: 1.5;
+}
+
+.navigation-menu ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.navigation-menu li {
+    margin-bottom: 10px; /* Add some space between the list items */
+}
+
+.nav-link {
+    display: block;
+    font-size: 16px;
+    color: #8892b0;
+    text-decoration: none;
+    text-indent: 0;
+    position: relative;
+    padding-left: 40px;
+    transition: color 0.3s, padding-left 0.3s;
+    line-height: 1.5; /* Add transition to color and padding-left */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: #8892b0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover {
+    color: #d5deee; /* Change color on hover */
+    padding-left: 75px; /* Add some padding to the left on hover for a smooth effect */
+}
+
+.nav-link:hover::before {
+    width: 60px; /* Extend the line on hover */
+    background-color: #d5deee;
+}
+
+.nav-link.active {
+    color: #d5deee; /* or any color you prefer */
+    font-weight: bold;
+    padding-left: 75px;
+    
+}
+
+.nav-link.active::before {
+    width: 60px;  /* Udvid linjen til venstre for det aktive link */
+    background-color: #d5deee;
+}
+
+#experience {
+    min-height: auto;
+}
+
+
+
+
+.instagram {
+    position: absolute;
+    top: 650px; /* Adjust this value as needed */
+    left: 180px;
+}
+
+.linkedin {
+    position: absolute;
+    top: 650px;
+    left: 220px;
+}
+
+.github {
+    position: absolute;
+    top: 650px;
+    left: 260px;
+}
+
+.twitter {
+    position: absolute;
+    top: 650px;
+    left: 300px;
+}
+
+
+.fa-linkedin, .fa-instagram, .fa-github, .fa-x-twitter {
+    color: #a8b2d1;
+    font-size: 26px; /* or any desired size */
+    margin-right: 18px; /* space between icons */
+}
+
+.fa-linkedin:hover, .fa-instagram:hover, .fa-github:hover, .fa-x-twitter:hover {
+    color: #ccd6f6;
+}
+
+/* This section will be all the scrollable content */
+
+
+
+.about_me {
+    /* padding: 85px 60px;*/
+    color: #8892b0;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Calibre Light", sans-serif;
+    margin-top: 105px;
+}
+
+.highlight {
+    color: #d5deee;
+    text-decoration: none;
+}
+
+.highlight:hover {
+    color: #64ffda;
+}
+
+/* This for the first box only  */
+.about_box_1 {
+    width: 500px;
+    height: 320px;
+    background: transparent;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    user-select: none;
+    position: relative;
+    padding: 5px; /* Add padding inside the box */
+    box-sizing: border-box;
+    margin-top: 50px; 
+}
+
+.about_box_1_link {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.date-range_1 {
+    color: #5d7094;
+    font-size: 14px;
+    font-family: "Calibre regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+
+}
+
+.job_name_1 {
+    color: #d5deee;
+    font-size: 18px;
+    font-family: "Calibre Regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 150px; /* Adjust as needed */
+}
+
+.about_box_1:hover .job_name_1 {
+    color:#64ffda;
+}
+
+.fa-solid {
+    margin-left: 2.5px;
+    margin-bottom: 1.5px; /* Adjust for spacing */
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    color:#d5deee; /* Align the icon vertically with the text */
+}
+
+
+.about_box_1:hover .fa-solid {
+    color: #64ffda;
+    transform: translateY(-5px) translateX(5px)rotate(-45deg);
+    transition: all 0.2s ease-out;
+}
+
+.experience_1 {
+    font-size: 0.9em;
+    color: #5d7094;
+    white-space: pre-line;
+    position: absolute;
+    font-family: "Calibre Regular", sans-serif;
+    letter-spacing: 0.5px;
+    top: calc(15px + 18px + 10px); /* 15px (top of .job_name_1) + 18px (font-size of .job_name_1) + 10px (some space between .job_name_1 and .experience_1) */
+    left: 150px; /* Aligns with the left property of .job_name_1 */
+    width: calc(100% - 150px); /* Adjusts the width to stay within the container */
+    line-height: 1.6; /* For better readability */
+}
+
+.highlight-box {
+    display: inline-block; /* To allow the box to fit the content inside */
+    margin-right: 10px; /* Spacing between the boxes */
+    margin-bottom: 10px; /* Space below each box for better separation when they wrap */ 
+    padding: 5px 10px; /* Padding around the text for spacing */
+    border-radius: 15px; /* Rounded appearance */
+    background: rgba(100, 255, 218, 0.1);
+    border: 0px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 2px 30px rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    color: #64ffda;
+    font-size: 12px;
+    font-family: "Calibre Medium", sans-serif; /* Color of the text inside the box */
+}
+
+/* Container for the highlight boxes */
+.highlight-box1-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; /* Position it absolutely within the .about_box_1 */
+    top: calc(50px + 175px + 10px);
+    left: 150px; /* Aligned with .experience_1 */
+}
+
+
+
+
+
+/* This is for the second box only */ 
+
+.about_box_2 {
+    width: 500px;
+    height: 260px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    user-select: none;
+    position: relative;
+    padding: 15px; /* Add padding inside the box */
+    box-sizing: border-box;
+    margin-top: 20px; 
+}
+
+.about_box_2_link {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.date-range_2 {
+    color: #5d7094;
+    font-size: 14px;
+    font-family: "Calibre regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+
+}
+
+.job_name_2 {
+    color: #d5deee;
+    font-size: 18px;
+    font-family: "Calibre Regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 150px; /* Adjust as needed */
+}
+
+.experience_2 {
+    font-size: 0.9em;
+    color: #5d7094;
+    white-space: pre-line;
+    position: absolute;
+    font-family: "Calibre Regular", sans-serif;
+    letter-spacing: 0.5px;
+    top: calc(15px + 18px + 10px); /* 15px (top of .job_name_1) + 18px (font-size of .job_name_1) + 10px (some space between .job_name_1 and .experience_1) */
+    left: 150px; /* Aligns with the left property of .job_name_1 */
+    width: calc(100% - 150px); /* Adjusts the width to stay within the container */
+    line-height: 1.6; /* For better readability */
+}
+
+.about_box_2:hover .job_name_2{
+    color:#64ffda;
+}
+
+.fa-solid {
+    margin-left: 2.5px;
+    margin-bottom: 1.5px; /* Adjust for spacing */
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    color:#d5deee; /* Align the icon vertically with the text */
+}
+
+
+.about_box_2:hover .fa-solid {
+    color: #64ffda;
+    transform: translateY(-5px) translateX(5px)rotate(-45deg);
+    transition: all 0.2s ease-out;
+}
+
+.highlight-box {
+    display: inline-block; /* To allow the box to fit the content inside */
+    margin-right: 10px; /* Spacing between the boxes */
+    margin-bottom: 20px; /* Space below each box for better separation when they wrap */ 
+    padding: 5px 10px; /* Padding around the text for spacing */
+    border-radius: 15px; /* Rounded appearance */
+    background: rgba(100, 255, 218, 0.1);
+    border: 0px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 2px 30px rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    color: #64ffda;
+    font-size: 12px;
+    font-family: "Calibre Medium", sans-serif; /* Color of the text inside the box */
+}
+
+/* Container for the highlight boxes */
+.highlight-box2-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; /* Position it absolutely within the .about_box_1 */
+    top: calc(25px + 175px + 10px);
+    left: 150px; /* Aligned with .experience_1 */
+}
+
+/* This is for the third box only */ 
+.about_box_3 {
+    width: 500px;
+    height: 270px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    user-select: none;
+    position: relative;
+    padding: 15px; /* Add padding inside the box */
+    box-sizing: border-box;
+    margin-top: 20px; 
+}
+
+.about_box_3_link {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.date-range_3 {
+    color: #5d7094;
+    font-size: 14px;
+    font-family: "Calibre regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+
+}
+
+.job_name_3 {
+    color: #d5deee;
+    font-size: 18px;
+    font-family: "Calibre Regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 150px; /* Adjust as needed */
+}
+
+.experience_3 {
+    font-size: 0.9em;
+    color: #5d7094;
+    white-space: pre-line;
+    position: absolute;
+    font-family: "Calibre Regular", sans-serif;
+    letter-spacing: 0.5px;
+    top: calc(15px + 18px + 10px); /* 15px (top of .job_name_1) + 18px (font-size of .job_name_1) + 10px (some space between .job_name_1 and .experience_1) */
+    left: 150px; /* Aligns with the left property of .job_name_1 */
+    width: calc(100% - 150px); /* Adjusts the width to stay within the container */
+    line-height: 1.6; /* For better readability */
+}
+
+.about_box_3:hover .job_name_3{
+    color:#64ffda;
+}
+
+.fa-solid {
+    margin-left: 2.5px;
+    margin-bottom: 1.5px; /* Adjust for spacing */
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    color:#d5deee; /* Align the icon vertically with the text */
+}
+
+
+.about_box_3:hover .fa-solid {
+    color: #64ffda;
+    transform: translateY(-5px) translateX(5px)rotate(-45deg);
+    transition: all 0.2s ease-out;
+}
+
+.highlight-box {
+    display: inline-block; /* To allow the box to fit the content inside */
+    margin-right: 10px; /* Spacing between the boxes */
+    margin-bottom: 20px; /* Space below each box for better separation when they wrap */ 
+    padding: 5px 10px; /* Padding around the text for spacing */
+    border-radius: 15px; /* Rounded appearance */
+    background: rgba(100, 255, 218, 0.1);
+    border: 0px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 2px 30px rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    color: #64ffda;
+    font-size: 12px;
+    font-family: "Calibre Medium", sans-serif; /* Color of the text inside the box */
+}
+
+/* Container for the highlight boxes */
+.highlight-box3-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; /* Position it absolutely within the .about_box_1 */
+    top: 230px;
+    left: 150px; /* Aligned with .experience_1 */
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 0;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Calibre regular", sans-serif;
+    color: #d5deee;
+    font-size: large;
+}
+
+.underline-text {
+    position: relative;
+    padding-bottom: 4px;  /* Spacing for the underline */
+    border-bottom: 1px solid transparent;  /* Initially transparent border */
+    transition: border-color 0.3s;
+}
+
+.resume-button:hover .underline-text {
+    border-bottom-color: #64ffda;  /* Change the color of the border on hover to show the underline */
+}
+
+.resume-button i.fa-solid.fa-arrow-right {
+    margin-left: 2.5px;
+    transition: transform 0.3s;
+}
+
+.resume-button:hover i.fa-solid.fa-arrow-right {
+    transform: translateX(5px);
+}
+
+/* This is general settings for all the boxes */ 
+.about_box_1:hover, .about_box_2:hover, .about_box_3:hover, .about_box_4:hover, .about_box_5:hover {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1.5px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+/* This will be the project section */
+
+/* This for the first box only  */
+.about_box_4 {
+    width: 500px;
+    height: 140px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    user-select: none;
+    position: relative;
+    padding: 15px; /* Add padding inside the box */
+    box-sizing: border-box;
+    margin-top: 50px; 
+}
+
+.about_box_4_link {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.project_description_1 {
+    color: #d5deee;
+    font-size: 18px;
+    font-family: "Calibre Regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 150px; /* Adjust as needed */
+}
+
+.about_box_4:hover .project_description_1 {
+    color:#64ffda;
+}
+
+.about_box_4:hover .project_description_1{
+    color:#64ffda;
+}
+
+.fa-solid {
+    margin-left: 2.5px;
+    margin-bottom: 1.5px; /* Adjust for spacing */
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    color:#d5deee; /* Align the icon vertically with the text */
+}
+
+
+.about_box_4:hover .fa-solid {
+    color: #64ffda;
+    transform: translateY(-5px) translateX(5px)rotate(-45deg);
+    transition: all 0.2s ease-out;
+}
+
+.project_image_1 {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.project_image_1:hover {
+    border: 2px solid rgba(255, 255, 255, 0.20);
+}
+
+.project_experience_1 {
+    font-size: 1em;
+    color: #5d7094;
+    white-space: pre-line;
+    position: absolute;
+    font-family: "Calibre Regular", sans-serif;
+    letter-spacing: 0.5px;
+    top: calc(15px + 18px + 10px); /* 15px (top of .job_name_1) + 18px (font-size of .job_name_1) + 10px (some space between .job_name_1 and .experience_1) */
+    left: 150px; /* Aligns with the left property of .job_name_1 */
+    width: calc(100% - 150px); /* Adjusts the width to stay within the container */
+    line-height: 1.6; /* For better readability */
+}
+
+.highlight-box {
+    display: inline-block; /* To allow the box to fit the content inside */
+    margin-right: 10px; /* Spacing between the boxes */
+    margin-bottom: 20px; /* Space below each box for better separation when they wrap */ 
+    padding: 5px 10px; /* Padding around the text for spacing */
+    border-radius: 15px; /* Rounded appearance */
+    background: rgba(100, 255, 218, 0.1);
+    border: 0px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 2px 30px rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    color: #64ffda;
+    font-size: 12px;
+    font-family: "Calibre Medium", sans-serif; /* Color of the text inside the box */
+}
+
+/* Container for the highlight boxes */
+.highlight-box4-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; /* Position it absolutely within the .about_box_1 */
+    top: 100px;
+    left: 150px; /* Aligned with .experience_1 */
+}
+
+/* This will be the second box */
+
+.about_box_5 {
+    width: 500px;
+    height: 160px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    user-select: none;
+    position: relative;
+    padding: 15px; /* Add padding inside the box */
+    box-sizing: border-box;
+    margin-top: 30px; 
+}
+
+.about_box_5_link {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.project_description_2 {
+    color: #d5deee;
+    font-size: 18px;
+    font-family: "Calibre Regular", sans-serif;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 150px; /* Adjust as needed */
+}
+
+.about_box_5:hover .project_description_2 {
+    color:#64ffda;
+}
+
+.about_box_5:hover .project_description_2 {
+    color:#64ffda;
+}
+
+.fa-solid {
+    margin-left: 2.5px;
+    margin-bottom: 1.5px; /* Adjust for spacing */
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    font-size: 12px;
+    color:#d5deee; /* Align the icon vertically with the text */
+}
+
+
+.about_box_5:hover .fa-solid {
+    color: #64ffda;
+    transform: translateY(-5px) translateX(5px)rotate(-45deg);
+    transition: all 0.2s ease-out;
+}
+
+.project_image_2 {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.project_image_2:hover {
+    border: 2px solid rgba(255, 255, 255, 0.20);
+}
+
+.project_experience_2 {
+    font-size: 1em;
+    color: #5d7094;
+    white-space: pre-line;
+    position: absolute;
+    font-family: "Calibre Regular", sans-serif;
+    letter-spacing: 0.5px;
+    top: calc(15px + 18px + 10px); /* 15px (top of .job_name_1) + 18px (font-size of .job_name_1) + 10px (some space between .job_name_1 and .experience_1) */
+    left: 150px; /* Aligns with the left property of .job_name_1 */
+    width: calc(100% - 150px); /* Adjusts the width to stay within the container */
+    line-height: 1.6; /* For better readability */
+}
+
+.about_design {
+    font-size: 16px; /* Adjust as needed */
+    color: #56647b; /* Color for the regular text */
+    margin-top: 50px;
+    margin-right: 200px; /* Adjust to align with the about_box */
+    font-family: "Calibre regular", sans-serif; /* Adjust font-family as needed */
+    position: relative;
+    margin-bottom: 180px;
+    line-height: 1.5; /* Adjust as needed, 1.5 is generally a good value for readability */
+
+}
+
+.about_design a {
+    color: #8695aa; /* Color for the text inside <a> tag */
+    font-weight: bold; /* Make text inside <a> tag bold */
+    text-decoration: none;
+}
+
+.about_design a:hover {
+    color: #64ffda; /* Color for the text inside <a> tag when hovered */
+}
+
+
